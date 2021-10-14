@@ -8,10 +8,10 @@ st.write("""
 # Mon petit coin de paradis
 """)
 
-databrochet =pd.read_csv("file:///Users/timothee/Desktop/Wild%20Code%20School/drive-download-20201120T125440Z-001/datamaquereau.csv",index_col='Code_commune')
+databrochet =pd.read_csv("path/datamaquereau.csv",index_col='Code_commune')
 databrochet.drop(columns="COM",inplace=True)
 
-databreme = pd.read_csv('file:///Users/timothee/Desktop/Wild%20Code%20School/drive-download-20201120T125440Z-001/databrème%20(1).csv')
+databreme = pd.read_csv('path/databrème%20(1).csv')
 databreme.set_index('Code_commune', inplace = True)
 
 # On definit nos metrics
